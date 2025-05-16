@@ -1,0 +1,294 @@
+@font-face {
+  font-family: Titillium Web;
+  src: url('./font/TitilliumWeb-Light.ttf');
+}
+
+body {
+  -webkit-app-region: drag;
+  color: white;
+  height: 100vh;
+  background-color: #121212;
+  overflow-y: hidden;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-family: Titillium Web;
+}
+
+/* - Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #009abd;
+}
+
+/* - Common classes to use */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid white;
+  box-shadow: 0 0 5px white;
+}
+.no-drag {
+  -webkit-app-region: none;
+  -webkit-user-select: none;
+}
+
+.center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.iframe-div {
+  display: flex;
+  justify-content: center;
+}
+.iframe {
+  position: fixed;
+  border: none;
+  overflow: hidden;
+  z-index: 999999;
+  filter: invert(95%);
+  box-shadow: 0 0 10px #00638f;
+}
+
+.hidden {
+  display: none;
+}
+
+.onclick-highlight:focus {
+  border: 2px solid #00638f;
+  box-shadow: 0 0 10px #00638f;
+}
+
+.base-color {
+  color: #808080;
+}
+
+.theme-color {
+  color: #006fe9;
+}
+
+.green-color {
+  color: #00ff3c;
+}
+.red-color {
+  color: red;
+}
+
+/* => Input field */
+.weex-input {
+  color: white;
+  -webkit-app-region: none;
+  border: none;
+  outline: none;
+  background-color: #161616;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+::placeholder {
+  font-family: Titillium Web;
+  color: white;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+}
+
+/* => */
+/* <==> <==> <==> */
+
+/* - //=> Taskbar */
+nav {
+  margin: -17px -7px;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #0f0f0f;
+  box-shadow: 0 0 5px #0f0f0f;
+}
+
+nav ul li {
+  -webkit-app-region: none;
+  list-style: none;
+  padding: 0px 2px;
+  font-weight: 100;
+}
+
+nav ul li:hover {
+  transition: all 0.2s;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+  background-color: #00638f;
+}
+
+/* - //=> Submit Button */
+
+#submit {
+  -webkit-app-region: none;
+  font-family: Titillium Web;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  color: white;
+  border: 2px solid #333333;
+  outline: none;
+  margin: 10px 0px;
+  border-radius: 50px;
+  padding: 8px;
+  background-color: #161616;
+}
+#submit:hover {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background-color: white;
+  color: #121212;
+  border: 2px solid #f2f2f2;
+}
+
+/* - //=> Index Component */
+.left-bar {
+  background-color: #0f0f0f;
+  float: left;
+  width: 170px;
+  height: 100vh;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.left-bar li {
+  list-style: none;
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.left-bar li:hover {
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+  margin: 5px 0px;
+  background-color: #00638f;
+  transition: 0.2s;
+}
+
+.content-menu {
+  margin: 0px 10px;
+}
+
+/* - //=> Home Component */
+.general-container {
+  margin: 3% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.general-container label {
+  text-align: center;
+  padding: 1% 3%;
+  font-size: 18px;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  margin-top: 4%;
+}
+.account {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 2%;
+  right: 3%;
+}
+
+/* - //=> Add Students Form  */
+
+.add-students-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.add-students-form input {
+  border: 1px solid #161616;
+  margin: 10px 7px;
+}
+.add-students-form input:focus {
+  transition: all 0.02s;
+  border: 1px solid #00638f;
+}
+
+/* - Student Div */
+.student-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+}
+.adjust-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.loop-column {
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.list-topbar {
+  display: flex;
+  justify-content: space-between;
+}
+.list-topbar small {
+  font-size: 20px;
+}
+
+.scroll {
+  -webkit-app-region: none;
+  -webkit-user-select: none;
+  overflow-x: none;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.day-changer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 16px;
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}

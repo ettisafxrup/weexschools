@@ -1,0 +1,2 @@
+These files are used only once in this project. To make everything looks good in a
+better structure, I decided to make these components separated from others.
