@@ -1,5 +1,8 @@
 # weexSchools - Manage Like a Pro!
 <b> a desktop application for managing educational institute's data more efficiently! </b>
+<br>
+<b>Backend Server:</b> <a href="https://github.com/ettisafxrup/weex-back">here!</a>
+
 <img src="https://github.com/user-attachments/assets/540df40a-b131-475c-858e-bd2b929d49fb" width="700" >
 
 ## 🔰 Features:
