@@ -31,7 +31,7 @@ const createData = () => {
   const createData = async (e: { preventDefault: () => void }) => {
     try {
       e.preventDefault();
-      setNewMessage('It might take us a while, yeahh...');
+      setNewMessage('It might take us a while...');
       const result = await axios.post(env.back.server + '/create', {
         ...newUser,
         localStorage,
