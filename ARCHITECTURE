@@ -1,0 +1,59 @@
+📁 Application Structure:
+
+.
+├── 📂 assets
+│   ├── assets.d.ts
+│   ├── entitlements.mac.plist
+│   ├── icon.icns
+│   ├── icon.ico
+│   ├── icon.png
+│   ├── icon.svg
+│   ├── LICENSE.md
+├── package.json
+├── package-lock.json
+├── README.md
+├── 📂 release
+│   ├── 📂 app
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── yarn.lock
+│   ├── node_modules.lnk
+├── 📂 src
+│   ├── 📂 __tests__
+│   │   ├── App.test.tsx
+│   ├── 📂 main
+│   │   ├── main.ts
+│   │   ├── menu.ts
+│   │   ├── preload.ts
+│   │   ├── util.ts
+│   ├── 📂 renderer
+│   │   ├── App.tsx
+│   │   ├── 📂 Components
+│   │   │   ├── .env.tsx
+│   │   │   ├── 📂 common
+│   │   │   │   ├── 📂 __one_a_time__
+│   │   │   │   │   ├── info.txt
+│   │   │   │   │   ├── Institution.tsx
+│   │   │   │   │   ├── Logo_Slogan.tsx
+│   │   │   │   ├── AddStudents.tsx
+│   │   │   │   ├── Attendance.tsx
+│   │   │   │   ├── Notice.tsx
+│   │   │   │   ├── 📂 online
+│   │   │   │   │   ├── CloudData.tsx
+│   │   │   │   │   ├── Whiteboard.tsx
+│   │   │   │   ├── Payments.tsx
+│   │   │   │   ├── Settings.tsx
+│   │   │   │   ├── StudentDataCollection.tsx
+│   │   │   │   ├── TitleBar.tsx
+│   │   │   ├── Index.tsx
+│   │   │   ├── 📂 reuseable
+│   │   │   │   ├── deleteInstitue.tsx
+│   │   │   │   ├── deleteStorage.tsx
+│   │   │   ├── WelcomePage.tsx
+│   │   ├── 📂 font
+│   │   │   ├── TitilliumWeb-Light.ttf
+│   │   ├── index.css
+│   │   ├── index.ejs
+│   │   ├── index.tsx
+│   │   ├── preload.d.ts
+├── tsconfig.json
